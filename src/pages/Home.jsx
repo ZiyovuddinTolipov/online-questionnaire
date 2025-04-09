@@ -1,4 +1,3 @@
-import React from "react"
 import { motion } from "framer-motion"
 import { ClipboardList, Users, BarChart3, ShieldCheck } from 'lucide-react'
 import { Button } from "@/components/ui/button"
@@ -29,7 +28,7 @@ function App() {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <header className="border-b">
+            <header className="border-b w-full max-w-[1500px] mx-auto">
                 <div className="container flex h-16 items-center justify-between px-4 md:px-6">
                     <a href="/" className="flex items-center gap-2">
                         <ClipboardList className="h-6 w-6" />
@@ -65,8 +64,8 @@ function App() {
                     </div>
                 </div>
             </header>
-            <main className="flex-1">
-                <section className="w-full py-12 md:py-24 lg:py-32">
+            <main className="w-full mx-auto ">
+                <section className="w-full py-12 md:py-24 lg:py-32 max-w-[1500px] mx-auto">
                     <div className="container px-4 md:px-6">
                         <motion.div
                             className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center"
@@ -106,7 +105,7 @@ function App() {
                     </div>
                 </section>
 
-                <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-muted max-w-[1500px] mx-auto">
                     <div className="container px-4 md:px-6">
                         <motion.div
                             className="flex flex-col items-center justify-center space-y-4 text-center"
@@ -226,7 +225,7 @@ function App() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-24 lg:py-32">
+                <section className="w-full py-12 md:py-24 lg:py-32 max-w-[1500px] mx-auto">
                     <div className="container px-4 md:px-6">
                         <motion.div
                             className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center"
@@ -282,7 +281,7 @@ function App() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted max-w-[1500px] mx-auto">
                     <div className="container px-4 md:px-6">
                         <motion.div
                             className="flex flex-col items-center justify-center space-y-4 text-center"
@@ -312,7 +311,7 @@ function App() {
                     </div>
                 </section>
             </main>
-            <footer className="border-t">
+            <footer className="border-t w-full max-w-[1500px] mx-auto">
                 <div className="container flex flex-col gap-4 py-10 md:flex-row md:py-8 px-4 md:px-6">
                     <div className="flex flex-col gap-2 md:gap-4 md:w-1/3">
                         <a href="/" className="flex items-center gap-2">
